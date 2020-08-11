@@ -5,5 +5,12 @@ def find_even_values(src)
   row = 0
   while src[row] do
     col = 0 
-    if src[row][col]
+    while src[row][col] do
+      if src[row][col] % 2 == 0 do
+        p src[row][col]
+      end
+      col += 1
+    end
+    row += 1
+  end
 end
